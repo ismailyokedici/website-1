@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Özel Çirle Ağız ve Diş Sağlığı Polikliniği</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#29ABE2',
+            'primary-dark': '#1a90c8',
+            'primary-deeper': '#1272a3',
+            navy: '#1a3255',
+            accent: '#f5a623',
+            body: '#6d7a8c',
+          },
+          fontFamily: {
+            sans: ['Mulish', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body { font-family: 'Mulish', sans-serif; color: #6d7a8c; font-size: 16px; line-height: 1.5; }
+    .hero-img { background: url('https://placehold.co/800x520/b8ddf0/4a90c8?text=') center/cover no-repeat; }
+    .section-divider { width: 50px; height: 3px; background: #29ABE2; }
+  </style>
+</head>
+<body class="bg-white overflow-x-hidden">
+
+  <!-- ===== TOP INFO BAR ===== -->
+  <div class="bg-gray-100 border-b border-gray-200 text-xs py-2">
+    <div class="max-w-6xl mx-auto px-4 flex flex-wrap items-center justify-between">
+      <div class="flex items-center gap-6 text-body">
+        <span class="flex items-center gap-1.5">
+          <i class="fas fa-map-marker-alt text-primary"></i>
+          Sancaktepe, İstanbul
+        </span>
+        <span class="flex items-center gap-1.5">
+          <i class="fas fa-phone text-primary"></i>
+          0216 XXX XX XX
+        </span>
+        <span class="flex items-center gap-1.5">
+          <i class="far fa-clock text-primary"></i>
+          Pzt – Cmt: 09:00 – 19:00
+        </span>
+      </div>
+      <div class="flex items-center gap-3 text-body">
+        <a href="#" class="hover:text-primary"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-primary"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-primary"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-primary"><i class="fab fa-google-plus-g"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="bg-white shadow-md py-3 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <div class="w-14 h-14 flex items-center justify-center">
+          <img src="https://placehold.co/56x56/29ABE2/ffffff?text=🦷" alt="Logo" class="w-14 h-14 rounded-full" />
+        </div>
+        <div>
+          <div class="text-navy font-extrabold text-lg leading-tight uppercase tracking-wide">Özel Çirle</div>
+          <div class="text-primary text-xs font-semibold uppercase tracking-widest">Ağız ve Diş Sağlığı</div>
+        </div>
+      </div>
+      <!-- Nav Links -->
+      <div class="hidden md:flex items-center gap-1 text-sm font-bold">
+        <a href="#" class="text-primary border-b-2 border-primary px-3 py-2">Anasayfa</a>
+        <a href="#" class="text-body hover:text-primary px-3 py-2 transition-colors">Kliniğimiz</a>
+        <a href="#" class="text-body hover:text-primary px-3 py-2 transition-colors">Hizmetler</a>
+        <a href="#" class="text-body hover:text-primary px-3 py-2 transition-colors">Ekibimiz</a>
+        <a href="#" class="text-body hover:text-primary px-3 py-2 transition-colors">Blog</a>
+        <a href="#" class="text-body hover:text-primary px-3 py-2 transition-colors">İletişim</a>
+        <a href="#" class="ml-3 bg-primary text-white px-5 py-2 rounded font-bold hover:bg-primary-dark transition-colors">
+          <i class="fas fa-calendar-alt mr-1"></i> Randevu Al
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="flex flex-col md:flex-row min-h-[480px]">
+    <!-- Left: Hero Image with overlay -->
+    <div class="relative flex-1 hero-img overflow-hidden min-h-[320px] md:min-h-0">
+      <img src="https://placehold.co/900x520/a8d8ea/3a86c8?text=" alt="Dental Hero" class="w-full h-full object-cover absolute inset-0" />
+      <!-- Dark gradient overlay at bottom -->
+      <div class="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent"></div>
+      <!-- Text overlay box -->
+      <div class="absolute bottom-8 left-4 right-4 md:right-auto md:left-8 md:bottom-10">
+        <div class="bg-white/90 backdrop-blur-sm shadow-lg p-5 rounded-sm border-l-4 border-primary">
+          <p class="text-xs text-primary font-bold uppercase tracking-wider mb-1">Sancaktepe'de</p>
+          <h1 class="text-navy text-xl font-extrabold leading-snug">En Kaliteli Diş Sağlığı Hizmetleri</h1>
+          <p class="text-body text-xs mt-2">Uzman ekibimizle sağlıklı gülüşler için buradayız.</p>
+          <a href="#" class="mt-3 inline-block bg-primary text-white text-xs font-bold px-4 py-2 rounded hover:bg-primary-dark transition-colors">
+            Daha Fazla Bilgi
+          </a>
+        </div>
+      </div>
+      <!-- Yellow circular badge -->
+      <div class="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 w-20 h-20 bg-accent rounded-full flex-col items-center justify-center text-center shadow-lg border-4 border-white z-10">
+        <i class="fas fa-phone text-white text-lg"></i>
+        <span class="text-white text-xs font-extrabold leading-tight mt-0.5">Hemen<br/>Ara</span>
+      </div>
+      <!-- Carousel dots -->
+      <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+        <span class="w-3 h-3 rounded-full bg-primary"></span>
+        <span class="w-3 h-3 rounded-full bg-white/60"></span>
+        <span class="w-3 h-3 rounded-full bg-white/60"></span>
+      </div>
+    </div>
+    <!-- Right: Blue panel -->
+    <div class="w-full md:w-80 bg-primary text-white flex flex-col justify-center px-6 md:px-8 py-8 md:py-10">
+      <div class="mb-6">
+        <div class="w-10 h-1 bg-white mb-4"></div>
+        <h2 class="font-extrabold text-xl leading-snug mb-4">
+          Sancaktepe'nin en kaliteli ağız ve diş sağlığı hizmetlerini sunmak için hazırız!
+        </h2>
+        <p class="text-white/80 text-sm mb-6">
+          Hastalarımıza en iyi hizmeti sunmak için her zaman buradayız. Deneyimli diş hekimlerimizle tanışın.
+        </p>
+      </div>
+      <div class="flex items-center gap-3 border-t border-white/30 pt-6">
+        <div class="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center shrink-0">
+          <i class="fas fa-phone text-white text-lg"></i>
+        </div>
+        <div>
+          <div class="text-white/70 text-xs">Hemen Arayın</div>
+          <div class="font-extrabold text-base">0216 XXX XX XX</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 mt-4">
+        <div class="bg-white/20 rounded-full w-12 h-12 flex items-center justify-center shrink-0">
+          <i class="far fa-clock text-white text-lg"></i>
+        </div>
+        <div>
+          <div class="text-white/70 text-xs">Çalışma Saatleri</div>
+          <div class="font-extrabold text-sm">Pzt – Cmt: 09:00 – 19:00</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLUE INFO STRIP ===== -->
+  <div class="bg-primary-deeper">
+    <div class="max-w-6xl mx-auto px-4 py-5 flex flex-wrap items-center justify-around gap-4">
+      <div class="flex items-center gap-3 text-white">
+        <i class="fas fa-phone-alt text-2xl opacity-80"></i>
+        <div>
+          <div class="text-white/70 text-xs uppercase tracking-wide">Bizi Arayın</div>
+          <div class="font-bold text-sm">0216 XXX XX XX</div>
+        </div>
+      </div>
+      <div class="w-px h-8 bg-white/20"></div>
+      <div class="flex items-center gap-3 text-white">
+        <i class="fas fa-map-marker-alt text-2xl opacity-80"></i>
+        <div>
+          <div class="text-white/70 text-xs uppercase tracking-wide">Adresimiz</div>
+          <div class="font-bold text-sm">Sancaktepe, İstanbul</div>
+        </div>
+      </div>
+      <div class="w-px h-8 bg-white/20"></div>
+      <div class="flex items-center gap-3 text-white">
+        <i class="far fa-calendar-alt text-2xl opacity-80"></i>
+        <div>
+          <div class="text-white/70 text-xs uppercase tracking-wide">Online Randevu</div>
+          <div class="font-bold text-sm">Hemen Randevu Alın</div>
+        </div>
+      </div>
+      <a href="#" class="bg-white text-primary font-bold text-sm px-5 py-2.5 rounded hover:bg-gray-100 transition-colors">
+        Randevu Al
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="py-14 bg-white">
+    <div class="max-w-6xl mx-auto px-4 flex flex-wrap items-center gap-10">
+      <!-- Text -->
+      <div class="flex-1 min-w-[280px]">
+        <p class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Hakkımızda</p>
+        <h2 class="text-navy text-2xl font-extrabold mb-4 leading-snug">
+          Özel Çırp Ağız ve Diş<br/>Sağlığı Polikliniği
+        </h2>
+        <div class="section-divider mb-6"></div>
+        <p class="text-body text-sm leading-relaxed mb-5">
+          Sancaktepe'de faaliyet gösteren kliniğimiz, ağız ve diş sağlığı alanında en kaliteli hizmetleri sunmayı hedeflemektedir. Deneyimli kadromuz ve modern ekipmanlarımızla hastalarımıza en iyi tedaviyi sağlamaktayız.
+        </p>
+        <p class="text-body text-sm leading-relaxed mb-6">
+          Kliniğimizde implant, ortodonti, estetik diş hekimliği, çocuk diş hekimliği ve daha birçok alanda hizmet vermekteyiz. Hasta memnuniyeti her zaman önceliğimizdir.
+        </p>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-center gap-3">
+            <span class="w-5 h-5 rounded-full bg-primary flex items-center justify-center shrink-0">
+              <i class="fas fa-check text-white text-xs"></i>
+            </span>
+            <span class="text-body">Uzman Diş Hekimleri Kadrosu</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="w-5 h-5 rounded-full bg-primary flex items-center justify-center shrink-0">
+              <i class="fas fa-check text-white text-xs"></i>
+            </span>
+            <span class="text-body">Modern ve Steril Ortam</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="w-5 h-5 rounded-full bg-primary flex items-center justify-center shrink-0">
+              <i class="fas fa-check text-white text-xs"></i>
+            </span>
+            <span class="text-body">Son Teknoloji Ekipmanlar</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="w-5 h-5 rounded-full bg-primary flex items-center justify-center shrink-0">
+              <i class="fas fa-check text-white text-xs"></i>
+            </span>
+            <span class="text-body">Uygun Fiyat Garantisi</span>
+          </li>
+        </ul>
+        <div class="mt-8 flex items-center gap-4">
+          <a href="#" class="bg-primary text-white font-bold text-sm px-6 py-3 rounded hover:bg-primary-dark transition-colors">
+            Hakkımızda Daha Fazla
+          </a>
+          <div class="flex items-center gap-2 text-body text-sm">
+            <i class="fas fa-phone text-primary"></i>
+            <span class="font-bold text-navy">0216 XXX XX XX</span>
+          </div>
+        </div>
+      </div>
+      <!-- Image -->
+      <div class="flex-1 min-w-[280px]">
+        <div class="relative">
+          <img src="https://placehold.co/520x380/e0f2fe/29ABE2?text=Klinik" alt="Klinik" class="w-full rounded shadow-lg object-cover" />
+          <!-- Badge -->
+          <div class="absolute -bottom-4 -left-4 bg-primary text-white text-center p-4 rounded shadow-xl w-28">
+            <div class="text-3xl font-extrabold leading-none">10+</div>
+            <div class="text-xs font-semibold leading-tight mt-1">Yıllık Deneyim</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="py-14 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <!-- Header -->
+      <div class="text-center mb-10">
+        <p class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Ne Sunuyoruz?</p>
+        <h2 class="text-navy text-2xl font-extrabold">Klinik Uygulamalarımız</h2>
+        <div class="section-divider mx-auto mt-4"></div>
+      </div>
+      <!-- Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow p-8 text-center group">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-primary transition-colors">
+            <i class="fas fa-tooth text-primary text-2xl group-hover:text-white transition-colors"></i>
+          </div>
+          <h3 class="text-navy font-bold text-base mb-3">Protez Diş Takımı</h3>
+          <p class="text-body text-sm leading-relaxed">Eksik dişleriniz için en uygun sabit veya hareketli protez çözümleri sunuyoruz.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow p-8 text-center group">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-primary transition-colors">
+            <i class="far fa-smile text-primary text-2xl group-hover:text-white transition-colors"></i>
+          </div>
+          <h3 class="text-navy font-bold text-base mb-3">Gülüş Makyajı</h3>
+          <p class="text-body text-sm leading-relaxed">Estetik uygulamalarla gülüşünüzü daha güzel ve sağlıklı hale getiriyoruz.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow p-8 text-center group">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-primary transition-colors">
+            <i class="fas fa-syringe text-primary text-2xl group-hover:text-white transition-colors"></i>
+          </div>
+          <h3 class="text-navy font-bold text-base mb-3">İmplant</h3>
+          <p class="text-body text-sm leading-relaxed">Modern implant teknolojisiyle kalıcı ve doğal görünümlü diş çözümleri uyguluyoruz.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow p-8 text-center group">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-primary transition-colors">
+            <i class="fas fa-star text-primary text-2xl group-hover:text-white transition-colors"></i>
+          </div>
+          <h3 class="text-navy font-bold text-base mb-3">Diş Beyazlatma</h3>
+          <p class="text-body text-sm leading-relaxed">Profesyonel beyazlatma uygulamalarıyla parlak ve sağlıklı dişlere kavuşun.</p>
+        </div>
+        <!-- Card 5 -->
+        <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow p-8 text-center group">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-primary transition-colors">
+            <i class="fas fa-child text-primary text-2xl group-hover:text-white transition-colors"></i>
+          </div>
+          <h3 class="text-navy font-bold text-base mb-3">Çocuk Diş Hekimliği</h3>
+          <p class="text-body text-sm leading-relaxed">Çocuklarınız için özel ve güvenli diş sağlığı hizmetleri sunuyoruz.</p>
+        </div>
+        <!-- Card 6 -->
+        <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow p-8 text-center group">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-primary transition-colors">
+            <i class="fas fa-teeth-open text-primary text-2xl group-hover:text-white transition-colors"></i>
+          </div>
+          <h3 class="text-navy font-bold text-base mb-3">Ortodonti</h3>
+          <p class="text-body text-sm leading-relaxed">Tel ve şeffaf plak uygulamaları ile düzgün ve estetik dişlere ulaşın.</p>
+        </div>
+      </div>
+      <!-- View All -->
+      <div class="text-center mt-10">
+        <a href="#" class="border-2 border-primary text-primary font-bold text-sm px-8 py-3 rounded hover:bg-primary hover:text-white transition-colors">
+          Tüm Hizmetlerimiz
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER (Image + Blue Text) ===== -->
+  <section class="relative overflow-hidden">
+    <div class="flex min-h-[340px]">
+      <!-- Left: Image -->
+      <div class="w-2/5 relative">
+        <img src="https://placehold.co/560x340/7ab8d4/3a86c8?text=" alt="Güzel Gülüş" class="w-full h-full object-cover" />
+      </div>
+      <!-- Right: Blue content -->
+      <div class="w-3/5 bg-primary-deeper flex flex-col justify-center px-14 py-10">
+        <p class="text-white/70 text-xs font-bold uppercase tracking-widest mb-3">Randevu Al</p>
+        <h2 class="text-white text-2xl font-extrabold leading-snug mb-4">
+          Güzel ve sağlıklı bir gülüşe<br />ihtiyacınız mı var?
+        </h2>
+        <p class="text-white/80 text-sm leading-relaxed mb-7 max-w-md">
+          Uzman diş hekimi ekibimizle birlikte sağlıklı ve estetik gülüşlere kavuşun. Randevunuzu hemen alın ve ilk adımı atın.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#" class="bg-white text-primary-deeper font-extrabold text-sm px-7 py-2.5 rounded hover:bg-gray-100 transition-colors">
+            Randevu Al
+          </a>
+          <a href="#" class="border-2 border-white/60 text-white font-bold text-sm px-7 py-2.5 rounded hover:bg-white/10 transition-colors">
+            <i class="fas fa-phone mr-2"></i> 0216 XXX XX XX
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ŞIMDI SECTION (Text+Form Left, Image Right) ===== -->
+  <section class="py-14 bg-white">
+    <div class="max-w-6xl mx-auto px-4 flex flex-wrap items-start gap-10">
+      <!-- Left: Text + Form -->
+      <div class="flex-1 min-w-[280px]">
+        <p class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Neden Biz?</p>
+        <h2 class="text-navy text-2xl font-extrabold mb-4 leading-snug">
+          Şimdi sizi tedavi etmeye<br/>hazırız
+        </h2>
+        <div class="section-divider mb-5"></div>
+        <p class="text-body text-sm leading-relaxed mb-6">
+          Kliniğimizde sunduğumuz hizmetler ile dişlerinizin sağlığını ve güzelliğini koruma altına alıyoruz. Deneyimli diş hekimlerimiz her zaman yanınızda olacak.
+        </p>
+        <!-- Appointment Form -->
+        <form class="space-y-3">
+          <input type="text" placeholder="Adınız Soyadınız" class="border border-gray-200 rounded px-4 py-2.5 text-sm text-body w-full focus:outline-none focus:border-primary" />
+          <input type="tel" placeholder="Telefon Numaranız" class="border border-gray-200 rounded px-4 py-2.5 text-sm text-body w-full focus:outline-none focus:border-primary" />
+          <input type="text" placeholder="Hizmet Seçiniz" class="border border-gray-200 rounded px-4 py-2.5 text-sm text-body w-full focus:outline-none focus:border-primary" />
+          <textarea placeholder="Mesajınız..." rows="3" class="border border-gray-200 rounded px-4 py-2.5 text-sm text-body w-full focus:outline-none focus:border-primary resize-none"></textarea>
+          <button type="submit" class="bg-primary text-white font-bold text-sm px-8 py-3 rounded hover:bg-primary-dark transition-colors">
+            Randevu Talebi Gönder
+          </button>
+        </form>
+      </div>
+      <!-- Right: Image + Blue badge -->
+      <div class="flex-1 min-w-[280px] relative">
+        <img src="https://placehold.co/520x440/e0f2fe/29ABE2?text=Smiling+Patient" alt="Patient" class="w-full rounded shadow-lg object-cover" />
+        <!-- Blue info card below image -->
+        <div class="mt-4 bg-primary text-white p-5 rounded flex items-center gap-4">
+          <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center shrink-0">
+            <i class="fas fa-tooth text-white text-xl"></i>
+          </div>
+          <div>
+            <div class="font-extrabold text-sm">Ağız ve Diş Sağlığı</div>
+            <div class="text-white/80 text-xs mt-0.5">Uzman hekimlerimizle randevu alın: 0216 XXX XX XX</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOTTOM BLUE BANNER ===== -->
+  <section class="bg-primary py-10 relative overflow-hidden">
+    <div class="absolute right-0 top-0 h-full w-64 opacity-10">
+      <i class="fas fa-tooth text-white" style="font-size: 18rem; position: absolute; right: -2rem; top: -2rem;"></i>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 flex flex-wrap items-center justify-between gap-6 relative">
+      <div class="flex items-center gap-5">
+        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center shrink-0">
+          <i class="fas fa-tooth text-white text-2xl"></i>
+        </div>
+        <div class="text-white">
+          <h3 class="font-extrabold text-xl leading-snug">Ağız ve Diş Sağlığı için<br/>hemen randevu alın!</h3>
+          <p class="text-white/80 text-sm mt-1">Uzman diş hekimlerimiz sizi bekliyor.</p>
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <a href="#" class="bg-white text-primary font-extrabold text-sm px-8 py-3 rounded hover:bg-gray-100 transition-colors">
+          Randevu Al
+        </a>
+        <a href="#" class="border-2 border-white text-white font-bold text-sm px-8 py-3 rounded hover:bg-white/10 transition-colors">
+          Bizi Arayın
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-gray-900 text-gray-400 pt-12 pb-5">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+        <!-- Col 1: Logo & About -->
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://placehold.co/48x48/29ABE2/ffffff?text=🦷" alt="Logo" class="w-12 h-12 rounded-full" />
+            <div>
+              <div class="text-white font-extrabold uppercase">Özel Çirle</div>
+              <div class="text-primary text-xs">Ağız ve Diş Sağlığı</div>
+            </div>
+          </div>
+          <p class="text-sm leading-relaxed mb-5">
+            Sancaktepe'nin güvenilir ağız ve diş sağlığı polikliniği. Uzman kadromuz ve modern ekipmanlarımızla hizmetinizdeyiz.
+          </p>
+          <div class="flex gap-3">
+            <a href="#" class="w-8 h-8 bg-gray-700 hover:bg-primary text-white rounded flex items-center justify-center transition-colors text-xs">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-8 h-8 bg-gray-700 hover:bg-primary text-white rounded flex items-center justify-center transition-colors text-xs">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="w-8 h-8 bg-gray-700 hover:bg-primary text-white rounded flex items-center justify-center transition-colors text-xs">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="w-8 h-8 bg-gray-700 hover:bg-primary text-white rounded flex items-center justify-center transition-colors text-xs">
+              <i class="fab fa-google"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="text-white font-bold mb-5 text-base">Hızlı Linkler</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-primary text-xs"></i> Anasayfa</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-primary text-xs"></i> Hakkımızda</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-primary text-xs"></i> Hizmetlerimiz</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-primary text-xs"></i> Ekibimiz</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-primary text-xs"></i> Blog</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-primary text-xs"></i> İletişim</a></li>
+          </ul>
+        </div>
+        <!-- Col 3: Services -->
+        <div>
+          <h4 class="text-white font-bold mb-5 text-base">Hizmetlerimiz</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-primary text-xs"></i> İmplant</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-primary text-xs"></i> Ortodonti</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-primary text-xs"></i> Gülüş Tasarımı</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-primary text-xs"></i> Diş Beyazlatma</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-primary text-xs"></i> Çocuk Diş Hekimliği</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-primary text-xs"></i> Protez Diş</a></li>
+          </ul>
+        </div>
+        <!-- Col 4: Contact -->
+        <div>
+          <h4 class="text-white font-bold mb-5 text-base">İletişim</h4>
+          <ul class="space-y-4 text-sm">
+            <li class="flex items-start gap-3">
+              <i class="fas fa-map-marker-alt text-primary mt-0.5 w-4 shrink-0"></i>
+              <span>Sancaktepe Mahallesi, İstanbul, Türkiye</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fas fa-phone text-primary w-4 shrink-0"></i>
+              <span>0216 XXX XX XX</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fas fa-phone text-primary w-4 shrink-0"></i>
+              <span>0532 XXX XX XX</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="far fa-envelope text-primary w-4 shrink-0"></i>
+              <span>info@ozelcirle.com</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="far fa-clock text-primary w-4 shrink-0"></i>
+              <span>Pzt – Cmt: 09:00 – 19:00</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Bottom bar -->
+      <div class="border-t border-gray-700 pt-6 flex flex-wrap items-center justify-between gap-4 text-sm">
+        <p>© 2026 Özel Çirle Ağız ve Diş Sağlığı Polikliniği. Tüm hakları saklıdır.</p>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-primary transition-colors">Gizlilik Politikası</a>
+          <a href="#" class="hover:text-primary transition-colors">Kullanım Şartları</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
